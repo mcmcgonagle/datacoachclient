@@ -29,7 +29,6 @@ def update_file(myParams):
     return str(file_name) + ' was created'
 
 def lambda_handler(event, context):
-    # TODO implement
     new_response =[event['company_id'], event['person_id'], event['rating']]
     update_file(new_response)
     
